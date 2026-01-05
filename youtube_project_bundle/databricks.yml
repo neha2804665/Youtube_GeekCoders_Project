@@ -17,7 +17,8 @@ variables:
   warehouse_id:
     description: WarehouseID
   spn_id:
-    description: SPN ID
+    decription: spn id
+  
 
 targets:
   dev:
@@ -33,7 +34,8 @@ targets:
       catalog: youtube_dev
       schema: dev
       warehouse_id: 4adc0ab1f019ca6f
-      spn_id: 04ca9d8f-78c5-4a8d-bedb-9e833ae31b97
+      spn_id: 9817ca66-2714-42d5-8832-58b496042021
+     
     presets:
       artifacts_dynamic_version: true
   prod:
@@ -46,12 +48,14 @@ targets:
       catalog: youtube_prod
       schema: prod
       warehouse_id: 4adc0ab1f019ca6f
-      spn_id: 04ca9d8f-78c5-4a8d-bedb-9e833ae31b97
+      spn_id: 9817ca66-2714-42d5-8832-58b496042021
+     
 
     permissions:
       - user_name: ssagarprajapati@gmail.com
         level: CAN_MANAGE
-      - group_name: earth_quake_prod_writer
+      - group_name: earthquake_prod_writer
         level: CAN_MANAGE
+      
 
     
