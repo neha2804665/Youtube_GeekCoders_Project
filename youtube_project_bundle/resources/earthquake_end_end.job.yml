@@ -23,7 +23,7 @@ resources:
             warehouse_id: 4adc0ab1f019ca6f
             dashboard_id: ${resources.dashboards.earthquake_monitor.id}
       run_as:
-        service_principal_name: 3ab4be6f-8fea-4d65-93c7-baff385fce00
+        service_principal_name: ${var.spn_id}
       queue:
         enabled: true
       parameters:
