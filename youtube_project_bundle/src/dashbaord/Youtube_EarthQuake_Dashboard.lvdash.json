@@ -20,7 +20,7 @@
         "  WHEN mag BETWEEN 3 AND 4 THEN 'Light (3–4)'\n",
         "  ELSE 'Moderate+ (4+)'\n",
         "END AS magnitude_bucket\n",
-        "from silver.earthquake_data )\n",
+        "from silver.earthquake_data_final )\n",
         "group by magnitude_bucket"
       ],
       "catalog": "youtube_prod",
